@@ -37,6 +37,17 @@ for (let year = 1920; year <= 2023; year++) {
     let options = document.createElement("OPTION");
     document.getElementById("year").appendChild(options).innerHTML = year;
 
+    let endName
+    
+        const Letters = (correctName) => {
+            if (!correctName) return correctName;
+            
+            return correctName.slice(0,1).toUpperCase() + 
+            correctName.slice(1).toLowerCase;
+            return endName;
+            
+            }
+            Letters(elName);
 
   }
 
@@ -46,19 +57,8 @@ for (let year = 1920; year <= 2023; year++) {
         const elInput = document.querySelector('input')
 
         const elName = elInput.value;
-
-
-
-        const Letters = (correctName) => {
-            if (!correctName) return correctName;
             
-            return correctName.slice(0,1).toUpperCase() + 
-            correctName.slice(1).toLowerCase;
-            
-            }
-            Letters(elName);
-            
-            elHello.innerText = 'Вітаю,' + " " + elName + '!'
+            elHello.innerText = 'Вітаю,' + " " + endName + '!'
 
     }
     takeName();
